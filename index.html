@@ -61,7 +61,7 @@ input[type="text"] {
 </head>
 <body>
 
-<div class="glitch">Enter PIN to unlock:</div>
+<div class="glitch">Who turned 25 today?:</div>
 <form id="pinForm" onsubmit="return checkPIN()">
     <input type="text" id="pinInput" maxlength="9">
     <input type="submit" value="Submit">
@@ -70,7 +70,7 @@ input[type="text"] {
 <div id="message" style="display:none;">
     <div class="glitch" id="typedMessage"></div>
     <div id="secretMessage" class="glitch" style="display:none;"></div>
-    <button id="readMoreButton" onclick="readMore()">Press for more</button>
+    <button id="readMoreButton" onclick="readMore()">Press for psagmeno 4stixo</button>
 </div>
 
 <div id="mandraMessage" style="display:none;">
@@ -80,12 +80,12 @@ input[type="text"] {
 <script>
 function checkPIN() {
     var pin = document.getElementById("pinInput").value.toLowerCase();
-    if (pin === "fullmoon") {
+    if (pin === "Malvina") {
         document.getElementById("pinForm").style.display = "none";
         document.getElementById("message").style.display = "block";
         typeMessage("ACCESS GRANTED", function() {
             setTimeout(function() {
-                typeSecretMessage("Everything seems to be temporary, but yet, I don't seem to get rid of the thought of you...or at least this is what my 03-03-24 03:24 self says", function() {
+                typeSecretMessage("Μέσα από αυτή την οθόνη , μέσα από αυτό το αρχείο html σου εύχομαι χρόνια πολλα! Εύχομαι ψυχική και πνευματική ανέλιξη, επίσης να περνάς όσο καλά μπορείς και θες... και τέλος να συνεχίσεις να εμπνέεις και να εμπνέεσαι!.......(Εννοούνται και όλες οι υπόλοιπες τυπικές ευχές) ", function() {
                     setTimeout(function() {
                         document.getElementById("readMoreButton").style.display = "block"; // Show the button after an additional delay of 1 second
                     }, 1000); // Additional delay of 1 second
@@ -93,7 +93,7 @@ function checkPIN() {
             }, 1000); // Delay displaying the secret message for 1 second
         });
     } else {
-        alert("Incorrect PIN. Hint: roof sex P.R.");
+        alert("Incorrect PIN. Hint: το ονομα της Μαλβίνας αλλα σε αγγλικά");
     }
     return false; // Prevent form submission
 }
@@ -125,7 +125,7 @@ function typeSecretMessage(message, callback) {
 function readMore() {
     document.getElementById("readMoreButton").style.display = "none"; // Hide the button
     document.getElementById("mandraMessage").style.display = "block"; // Show the mandra message
-    typeMandraMessage("When chemical substances come into contact, they interact. That, results in the formation of new substances. This transformation can take many forms. Both substances are changed in some way . Certain chemical reactions produce energy or create new compounds with unique properties. T T tTTThTTTTTTTT5t&@#TT1010101110010111100110111000TTThey may gain new perspetives, develop empathy, or challenge their beliefs and assumptions...wait..........are we still talking about chemical substances?"); // Call function to type out the mandra message
+    typeMandraMessage("Memories fade, yet echoes remain,           In the dance of time, our stories reign"); // Call function to type out the mandra message
 }
 
 function typeMandraMessage(message) {
