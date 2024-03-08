@@ -80,7 +80,7 @@ input[type="text"] {
 <script>
 function checkPIN() {
     var pin = document.getElementById("pinInput").value.toLowerCase();
-    if (pin === "Malvina") {
+    if (pin === "Malvinaa") {
         document.getElementById("pinForm").style.display = "none";
         document.getElementById("message").style.display = "block";
         typeMessage("ACCESS GRANTED", function() {
@@ -93,7 +93,7 @@ function checkPIN() {
             }, 1000); // Delay displaying the secret message for 1 second
         });
     } else {
-        alert("Incorrect PIN. Hint: το ονομα της Μαλβίνας αλλα σε αγγλικά");
+        alert("Incorrect PIN. Hint: το ονομα της Μαλβίνας αλλα σε αγγλικά με 2 α");
     }
     return false; // Prevent form submission
 }
